@@ -1,8 +1,6 @@
 [Unit]
 Description=Globalprotect VPN Router
 After=network.target
-Wants=gpd.service
-After=gpd.service
 
 [Service]
 User=root
