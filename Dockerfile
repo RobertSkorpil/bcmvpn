@@ -8,6 +8,7 @@ ADD vpn-router.service /etc/systemd/system
 RUN chmod u+x /usr/local/sbin/vpn-router-start.sh
 USER user0
 ADD .bash_history /home/user0
+ADD hipreport.sh /home/user0
 USER root
 RUN systemctl enable ssh.service
 RUN systemctl enable vpn-router.service
